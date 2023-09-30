@@ -18,10 +18,10 @@ public class PBETests {
         
         byte[] encrypted = encrypt(msg, password);
         
-        Files.write(Paths.get("pbeEncrypted/file2.pbe"), encrypted);
+        Files.write(Paths.get("pbeEncrypted/admin.pbe"), encrypted);
         System.out.println("Encrypted: " + new String(encrypted));
         
-        byte[] decrypted = decrypt("pbeEncrypted/file2.pbe", password);
+        byte[] decrypted = decrypt("pbeEncrypted/admin.pbe", password);
         System.out.println("Decrypted: " + new String(decrypted));
     }
     
