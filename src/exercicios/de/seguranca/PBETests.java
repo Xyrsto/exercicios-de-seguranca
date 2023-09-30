@@ -13,8 +13,8 @@ import java.nio.file.Paths;
  */
 public class PBETests {
     public static void main(String[] args) throws Exception{
-        String msg = "Hello world";
-        String password = "test1234";
+        String msg = "admin1234@";
+        String password = "admin1234@";
         
         byte[] encrypted = encrypt(msg, password);
         
